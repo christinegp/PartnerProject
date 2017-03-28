@@ -1,19 +1,38 @@
-function SetDate()
-{
-var date = new Date();
-
-var day = date.getDate();
-var month = date.getMonth() + 1;
-var year = date.getFullYear();
-
-if (month < 10) month = "0" + month;
-if (day < 10) day = "0" + day;
-
-var today = year + "-" + month + "-" + day;
 
 
-document.getElementById('myDate').value = today;
-}
+
+
+//THis is the jquery
+
+$("#new-itinerary").click(function(){
+ var itinerary = $('<div>hey</div>');
+ $('#agenda').append(itinerary);
+});
+
+
+
+
+
+//
+//
+//
+//
+//function SetDate()
+//{
+//var date = new Date();
+//
+//var day = date.getDate();
+//var month = date.getMonth() + 1;
+//var year = date.getFullYear();
+//
+//if (month < 10) month = "0" + month;
+//if (day < 10) day = "0" + day;
+//
+//var today = year + "-" + month + "-" + day;
+//
+//
+//document.getElementById('myDate').value = today;
+//}
 
 
 
