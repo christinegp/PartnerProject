@@ -3,14 +3,8 @@
 <head>
 
 	<link rel="stylesheet" href="styles.css">
-<script
- src="https://code.jquery.com/jquery-3.2.1.js"
- integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
- crossorigin="anonymous"></script>
+
 <!--	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>-->
-	<script type="text/javascript" src="main.js"></script>
-</head>
-<body>
 
 
 
@@ -20,59 +14,24 @@
 
 
 
+
+
+
+<!--
 		<header>
 			<h1 class="header">plan*it</h1>
 			<nav class="side-nav">
 				<div class="left-side">
+-->
 <!--					<h2 class="add"><a id="new-itinerary" href="#" class="button" >Add Itinerary</a></h2>-->
 
-	<style>
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-}
-
-/* Modal Content */
-.modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-}
-
-/* The Close Button */
-.close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
-</style>
 </head>
 <body>
 <!--  <input placeholder="City, Zip Code, State" </input><a class="button">Enter </a>-->
 <h2>Add Itinerary</h2>
 
 <!-- Trigger/Open The Modal -->
-<button id="myBtn">Your Itinerary</button>
+<button id="myBtn" class="button">Your Itinerary</button>
 
 <!-- The Modal -->
 <div id="myModal" class="modal">
@@ -80,10 +39,57 @@
   <!-- Modal content -->
   <div class="modal-content">
     <span class="close">&times;</span>
-    <p>Your Events Go Here in the Modal..</p>
+    <p id="events">Your Events Go Here in the Modal..</p>
   </div>
 
 </div>
+
+				</div>
+
+				<div class="left-side">
+					<h2 class="food">Food & Drinks</h2>
+				</div>
+				<div class="left-side">
+					<h2 class="free">Free</h2>
+				</div>
+				<div class="left-side">
+					<h2 class="edit">Edit & Share</h2>
+				</div>
+				<div class="left-side">
+					<h2 class="chat">Chat</h2>
+				</div>
+				<div class="left-side">
+					<h2 class="help">Help</h2>
+				</div>
+				<div class="left-side">
+					<a id="activities" class="button">Activities</a>
+				</div>
+
+
+
+			</nav>
+		</header>
+ <main>
+
+    <div id="agenda">
+		<h1> Your Itinerary</h1>
+
+
+
+
+
+		<h2> {date}</h2>
+		<h3> {events}</h3>
+		<h3> {food/drinks}</h3>
+		<h3> {free events}</h3>
+	 </div>
+  </main>
+<footer></footer>
+
+
+
+<!--
+
 
 <script>
 // Get the modal
@@ -112,59 +118,21 @@ window.onclick = function(event) {
     }
 }
 </script>
-
-
-
-
-
-				</div>
-				<div class="left-side">
-					<h2 class="activities">Activities</h2>
-				</div>
-				<div class="left-side">
-					<h2 class="food">Food & Drinks</h2>
-				</div>
-				<div class="left-side">
-					<h2 class="free">Free</h2>
-				</div>
-				<div class="left-side">
-					<h2 class="edit">Edit & Share</h2>
-				</div>
-				<div class="left-side">
-					<h2 class="chat">Chat</h2>
-				</div>
-				<div class="left-side">
-					<h2 class="help">Help</h2>
-				</div>
-			</nav>
-		</header>
- <main>
-
-    <div id="agenda">
-		<h1> Your Itinerary</h1>
-
-
-
-
-
-		<h2> {date}</h2>
-		<h3> {events}</h3>
-		<h3> {food/drinks}</h3>
-		<h3> {free events}</h3>
-	 </div>
-  </main>
-<footer></footer>
+-->
 
 
 
 
 
 
+<script
+ src="https://code.jquery.com/jquery-3.2.1.js"
+ integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+ crossorigin="anonymous"></script>
 
 
 
-
-
+	<script type="text/javascript" src="main.js"></script>
 
 
 </body>
