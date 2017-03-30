@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<link rel="stylesheet" href="styles.css">
+	//googlemaps 2
+	<meta charset="utf-8">
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyD_mcKHXzZ_31CO0wfnakbPcxhRd63R3wY">
+	</script>
+</head>
+
+<body>
+<!--  <input placeholder="City, Zip Code, State" </input><a class="button">Enter </a>-->
+<h1>planit</h1>
+	<p>Discover new things to do, food, & drinks in Los Angeles</p>
+<!-- Trigger/Open The Modal -->
+<div style="text-align: center;">
+<button id="myBtn" class="button">Your Itinerary</button>
+
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+  	<!-- Modal content -->
+  		<div class="modal-content">
+				<h2> Your Day </h2>
+    		<span class="close">&times;</span>
+		 			<input type="date" id="myDate"/><br>
+<!--						<a class="button" id="GetEvents" value="Activities " href="#"/>Events</a>-->
+						<div id="events" class="events"></div>
+         
+        <p data-height="300" data-theme-id="23943" data-slug-hash="mWQmdv" data-default-tab="result" data-user="christinegp" data-embed-version="2" data-pen-title="Eventful" class="codepen">See the Pen <a href="http://codepen.io/christinegp/pen/mWQmdv/">Eventful</a> by christine (<a href="http://codepen.io/christinegp">@christinegp</a>) on <a href="http://codepen.io">CodePen</a>.</p>
+<script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+            
+						<!-- <input placeholder="City, Zip Code, State" </input><a class="button"></a> -->
+					<!-- <input id="searchInput" class="controls" type="text" placeholder="Enter a location">
+							<div id="map"></div>
+							<ul id="geoData">
+							</ul> -->
+							<div id="map">
+							</div>
+  		</div>
+		</div>
+	</div>
+
+	<div class="stretch">
+				<div class="left-side">
+					<h2 class="edit">Edit & Share</h2>
+				</div>
+				<div class="left-side">
+					<h2 class="chat">Chat</h2>
+				</div>
+				<div class="left-side">
+					<h2 class="help">Help</h2>
+				</div>
+		</div>
+	 </div>
+
+<footer></footer>
+
+<script
+ src="https://code.jquery.com/jquery-3.2.1.js"
+ integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+ crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="main.js"></script>
+	<script type="text/javascript" src="http://api.eventful.com/js/api"></script>
+	<!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD_mcKHXzZ_31CO0wfnakbPcxhRd63R3wY&libraries=places&callback=initMap" async defer></script> -->
+
+</body>
+</html>
